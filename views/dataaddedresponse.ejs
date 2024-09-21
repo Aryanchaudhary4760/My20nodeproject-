@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Added Successfully</title>
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeo5jzb2r3j0vJwQl5n8EC3IjeF6I6k6Gfzv8btXQ3j0X6dk" 
+        crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .confirmation-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .confirmation-card {
+            width: 100%;
+            max-width: 500px;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .confirmation-card .icon {
+            font-size: 3rem;
+            color: #198754; /* Bootstrap success color */
+            margin-bottom: 1rem;
+        }
+        .confirmation-card h2 {
+            margin-bottom: 1rem;
+            color: #198754;
+        }
+        .confirmation-card p {
+            margin-bottom: 2rem;
+            color: #6c757d;
+        }
+          /* Custom spacing for buttons */
+          .confirmation-card .action-buttons a {
+            margin-right: 1rem; /* Adds 16px space to the right */
+        }
+
+        /* Remove right margin from the last button */
+        .confirmation-card .action-buttons a:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h2>Student Added Successfully!</h2>
+            <p>The new student's data has been successfully added to the system.</p>
+            <div class="d-flex justify-content-center action-buttons">
+                <!-- Anchor Tags for Actions -->
+                <a href="/" class="btn btn-success">
+                    <i class="bi bi-plus-circle"></i> Add Another Student
+                </a>
+                <a href="/getstudent" class="btn btn-primary">
+                    <i class="bi bi-list"></i>View Student List
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper) -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-qENRZIv0MhvGEE3i5JGv6k3AqTfNObndXcU1ZUF78u7Y0t37E05ynkQht5jB5z4+" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
